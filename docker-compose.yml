@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app
+    ports:
+      - "127.0.0.1:80:80"
+    networks:
+      - myapp-net
+    restart: on-failure
+
+networks:
+  myapp-net:
+    driver: bridge
