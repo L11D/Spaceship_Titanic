@@ -11,6 +11,8 @@ services:
     networks:
       - myapp-net
     restart: on-failure
+#    volumes:
+#      - ./testvolume:/SpaceShipTitanic/log
 
 networks:
   myapp-net:
