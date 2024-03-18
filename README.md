@@ -41,7 +41,7 @@ pip install poetry
 ```
 3. Install requirement packages
 ```bash
-POETRY_VIRTUALENVS_CREATE=false poetry install --no-interaction --no-ansi
+poetry install --no-interaction --no-ansi
 ```
 
 4. Run api
@@ -66,7 +66,7 @@ git clone https://github.com/L11D/Spaceship_Titanic.git
 cd Spaceship_Titanic
 ```
 
-2. Install poetry
+2. Create container
 ```bash
 docker-compose up -d
 ```
@@ -96,7 +96,7 @@ pip install poetry
 
 3. Install requirement packages
 ```bash
-POETRY_VIRTUALENVS_CREATE=false poetry install --no-interaction --no-ansi
+poetry install --no-interaction --no-ansi
 ```
 
 4. Train model
