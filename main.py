@@ -4,6 +4,7 @@ import logging
 import os
 import datetime
 
+
 class CLI(object):
 
     def __init__(self):
@@ -18,7 +19,7 @@ class CLI(object):
 
 if __name__ == '__main__':
     if not os.path.isdir("data"):
-            os.mkdir("data")
+        os.mkdir("data")
     if not os.path.isdir("data/log"):
         os.mkdir("data/log")
     log_file_name = f"data/log/log_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
